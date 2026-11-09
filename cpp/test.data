@@ -1,0 +1,11 @@
+{
+    "myarray|array": "x,y,z,",
+    "mylist|flist": "two,three,",
+    "mydlist|dlist": "c,d,",
+    "mystack|stack": "item0,item1,",
+    "myqueue|queue": "first,",
+    "mytree|tree": "60,40,20,50,70,80,",
+    "myset|set": "1,3,4,5,7,10,",
+    "mybst|bst": "7,3,2,1,5,4,6,9,8,",
+    "myht|ht": "linear:"
+}

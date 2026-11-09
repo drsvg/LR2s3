@@ -1,0 +1,41 @@
+Задание 1:
+./dbms --file file.data --query 'TASKSCHK A,B,C ; A:B,B:C' //TRUE
+./dbms --file file.data --query 'TASKSCHK A,B,C,D ; A:B,A:D,B:C,C:A' //FALSE
+
+Задание 2:
+./dbms --file test.data --query 'SETADD myset apple' - добавить
+./dbms --file test.data --query 'SET_AT myset apple' //TRUE - проверка наличия объекта
+./dbms --file test.data --query 'SET_AT myset banana' //FALSE - проверка наличия объекта
+./dbms --file test.data --query 'SETDEL myset apple' - удаление
+./dbms --file test.data --query 'PRINT myset' - вывод
+
+Задание 3:
+SET: 4,10,5,1,3,7,
+./dbms --file test.data --query 'SPLIT myset 15' - разбиение на подмножества
+
+Задание 4:
+ARRAY: x,y,z,
+./dbms --file test.data --query 'MSUB myarray'
+
+Задание 5:
+BST: "7,3,2,1,5,4,6,9,8,"
+./dbms --file test.data --query 'BSTHEIGHT mybst' //4
+
+Задание 6.1:
+./dbms --file test.data --query 'HLINIT ht linear'
+./dbms --file test.data --query 'HINSERT ht apple'
+./dbms --file test.data --query 'HINSERT ht banana'
+./dbms --file test.data --query 'HINSERT ht cherry'
+./dbms --file test.data --query 'HFIND ht banana' //TRUE
+./dbms --file test.data --query 'HREMOVE ht banana'
+./dbms --file test.data --query 'HFIND ht banana' //FALSE
+./dbms --file test.data --query 'HFIND ht cherry' //TRUE
+
+Задание 6.2:
+./dbms --file test.data --query 'HLINIT myht linear'
+./dbms --file test.data --query 'HLONGEST myht abcabcbb'
+./dbms --file test.data --query 'HLONGEST myht bbbbb'
+./dbms --file test.data --query 'HLONGEST myht pwwkew'
+
+Задание 7:
+g++ test_lru.cpp lrucache.cpp -o test_lru
