@@ -1,0 +1,14 @@
+[package]
+name = "dbms"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "dbms"
+path = "src/main.rs"
+
+[[bin]]
+name = "lru_demo"
+path = "src/bin/lru_demo.rs"
+
+[dependencies]
